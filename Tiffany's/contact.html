@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Tiffany & Co.</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: #81D8D0;
+      font-size: 2rem;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-width: 1200px;
+      display: block;
+      margin: 40px auto;
+      border-radius: 12px;
+    }
+
+    .contact-info {
+      max-width: 800px;
+      margin: 0 auto 60px auto;
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-info p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .form-label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn-primary {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand brand-name" href="index.html">Tiffany & Co.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-dark">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="high-jewellery.html">High Jewellery</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="engagement.html">Love & Engagement</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="watches.html">Fine Watches</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Image -->
+  <img src="https://media.tiffany.com/is/image/tiffanydm/2025_VDAY_CUSTOMERSERVICELP_Desktop?$tile$&wid=2992&fmt=webp" alt="Customer Service" class="hero-img"/>
+
+  <!-- Contact Info -->
+  <section class="contact-info">
+    <h2>Contact Us</h2>
+    <p><strong>Call:</strong> 800 843 3269</p>
+    <p><strong>WhatsApp</strong></p>
+    <p><strong>Book an Appointment</strong></p>
+    <p><strong>Request a Callback to Book an Appointment</strong></p>
+    <p><strong>Track Your Order</strong></p>
+    <br/>
+    <p><strong>Client Care Hours of Operations (EST):</strong></p>
+    <p>Monday–Friday: 8:00AM–10:00PM EST</p>
+    <p>Saturday: 9:00AM–9:00PM EST</p>
+    <p>Sunday: 10:00AM–9:00PM EST</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="container py-5">
+    <h2>Contact Form</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- Still Have Questions Section -->
+  <section class="container py-5 text-center">
+    <h2 class="mb-4" style="font-family: 'Playfair Display', serif;">Still have questions?</h2>
+    <p class="mb-2">We’re happy to help you find the perfect Tiffany piece.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <p><strong>Call:</strong> 800 843 3269</p>
+      </div>
+      <div class="col-md-4">
+        <p><strong>Book an Appointment</strong></p>
+      </div>
+      <div class="col-md-4">
+        <p><strong>Track Your Order</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    © 2025 Tiffany & Co. · Curated Presentation by Harshini Thakur
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Tiffany & Co.</title>
+
+  <!-- Bootstrap & Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: #81D8D0;
+      font-size: 2rem;
+    }
+
+    .hero-section {
+      background-image: url('https://images.unsplash.com/photo-1602524207247-5886467887b6?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #000;
+      padding: 7rem 1rem;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      background-color: rgba(255, 255, 255, 0.88);
+      padding: 3rem;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+
+    .hero-section p {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .btn-explore {
+      background-color: #81D8D0;
+      color: #000;
+      border: none;
+    }
+
+    .btn-explore:hover {
+      background-color: #5dc7be;
+      color: #000;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
+      padding: 2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand brand-name" href="index.html">Tiffany & Co.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-dark">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-dark" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="high-jewellery.html">High Jewellery</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="engagement.html">Love & Engagement</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="watches.html">Fine Watches</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>Welcome to Tiffany & Co.</h1>
+      <p>Discover brilliance in every detail — from timeless classics to modern masterpieces.</p>
+    </div>
+  </section>
+
+  <!-- Feature Categories -->
+  <section class="container py-5">
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://timessquare.com.hk/wp-content/uploads/2023/10/4.-Tiffany-Co.-House-Ambassador-Anya-Taylor-Joy-in-New-High-Jewelry-Campaign.jpeg" class="category-img" alt="High Jewellery">
+          <div class="card-body">
+            <h5 class="card-title">High Jewellery</h5>
+            <a href="high-jewellery.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://timessquare.com.hk/wp-content/uploads/2023/10/5.-Tiffany-Co.-House-Ambassador-Anya-Taylor-Joy-in-New-High-Jewelry-Campaign.jpeg" class="category-img" alt="Love & Engagement">
+          <div class="card-body">
+            <h5 class="card-title">Love & Engagement</h5>
+            <a href="engagement.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://timessquare.com.hk/wp-content/uploads/2023/10/3.-Tiffany-Co.-House-Ambassador-Anya-Taylor-Joy-in-New-High-Jewelry-Campaign.jpeg" class="category-img" alt="Fine Watches">
+          <div class="card-body">
+            <h5 class="card-title">Fine Watches</h5>
+            <a href="watches.html" class="btn btn-explore">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Tiffany & Co. · Curated Experience by Harshini Thakur
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
